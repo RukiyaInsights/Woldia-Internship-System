@@ -1,0 +1,153 @@
+@import "tailwindcss";
+/* =========================================
+   HOME PAGE ENTRANCE ANIMATIONS
+========================================= */
+
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Project title */
+.animate-project-title {
+    animation: titleFadeIn 1.2s ease-out both;
+}
+
+/* Description below the title */
+.animate-home-description {
+    animation: titleFadeIn 1.2s ease-out 0.25s both;
+}
+
+/* Sign In and Create Account buttons */
+.animate-home-buttons {
+    animation: titleFadeIn 1.2s ease-out 0.5s both;
+}
+
+/* Secure Access, Role-Based Access, Internship Coordination */
+.animate-home-features {
+    animation: titleFadeIn 1.2s ease-out 0.75s both;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .animate-project-title,
+    .animate-home-description,
+    .animate-home-buttons,
+    .animate-home-features {
+        animation: none !important;
+    }
+}
+
+/* =========================================
+   NOTIFICATION BELL RING ANIMATION
+========================================= */
+
+@keyframes notificationBellRing {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: rotate(-12deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(12deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    90% {
+        transform: rotate(5deg);
+    }
+}
+
+/* =========================================
+   NOTIFICATION BADGE PULSE
+========================================= */
+
+@keyframes notificationBadgePulse {
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.25);
+    }
+
+    50% {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 5px rgba(220, 38, 38, 0);
+    }
+}
+
+/* =========================================
+   NOTIFICATION BUTTON GOLD GLOW
+========================================= */
+
+@keyframes notificationButtonGlow {
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(197, 173, 141, 0);
+    }
+
+    50% {
+        box-shadow: 0 0 0 4px rgba(197, 173, 141, 0.22);
+    }
+}
+
+/* Bell rings when unread notifications exist */
+.notification-bell-active {
+    animation: notificationBellRing 1s ease-in-out;
+    transform-origin: top center;
+}
+
+/* Red unread badge pulses continuously */
+.notification-badge-active {
+    animation: notificationBadgePulse 1.5s ease-in-out infinite;
+}
+
+/* Notification button gently glows */
+.notification-button-active {
+    animation: notificationButtonGlow 2s ease-in-out infinite;
+}
+
+/* =========================================
+   ACCESSIBILITY: REDUCE MOTION
+========================================= */
+/* Hide the browser's extra password visibility icon */
+.password-input-no-extra-eye::-ms-reveal,
+.password-input-no-extra-eye::-ms-clear {
+    display: none;
+}
+
+/* Hide extra password controls in WebKit-based browsers */
+.password-input-no-extra-eye::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+}
+
+.password-input-no-extra-eye::-webkit-textfield-decoration-container {
+    display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    .notification-bell-active,
+    .notification-badge-active,
+    .notification-button-active {
+        animation: none !important;
+    }
+}
