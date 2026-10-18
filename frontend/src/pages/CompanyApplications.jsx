@@ -42,7 +42,7 @@ function CompanyApplications() {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/internships/company/applications",
+                "https://woldia-internship-system.onrender.com/api/internships/company/applications",
                 {
                     headers: {
                         Authorization:
@@ -83,7 +83,7 @@ function CompanyApplications() {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/internships/company/applications/status",
+                "https://woldia-internship-system.onrender.com/api/internships/company/applications/status",
                 {
                     method: "PATCH",
                     headers: {

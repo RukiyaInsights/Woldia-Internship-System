@@ -27,7 +27,7 @@ import {
 
 import AppLayout from "../components/layout/AppLayout";
 
-const API_BASE = "http://localhost:5000/api/supervisor";
+const API_BASE = "https://woldia-internship-system.onrender.com/api/supervisor";
 
 function SupervisorDashboard() {
     const [students, setStudents] = useState([]);

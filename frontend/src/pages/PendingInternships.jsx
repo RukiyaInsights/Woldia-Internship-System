@@ -50,7 +50,7 @@ function PendingInternships() {
             setError("");
 
             const response = await fetch(
-                "http://localhost:5000/api/admin/internships/pending",
+                "https://woldia-internship-system.onrender.com/api/admin/internships/pending",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -111,7 +111,7 @@ function PendingInternships() {
             setSuccessMessage("");
 
             const response = await fetch(
-                `http://localhost:5000/api/admin/internships/${internshipId}/approve`,
+                `https://woldia-internship-system.onrender.com/api/admin/internships/${internshipId}/approve`,
                 {
                     method: "PATCH",
                     headers: {
@@ -171,7 +171,7 @@ function PendingInternships() {
             setSuccessMessage("");
 
             const response = await fetch(
-                `http://localhost:5000/api/admin/internships/${internshipId}/reject`,
+                `https://woldia-internship-system.onrender.com/api/admin/internships/${internshipId}/reject`,
                 {
                     method: "PATCH",
                     headers: {

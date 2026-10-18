@@ -178,7 +178,7 @@ function CreateInternship() {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/internships",
+                "https://woldia-internship-system.onrender.com/api/internships",
                 {
                     method: "POST",
                     headers: {

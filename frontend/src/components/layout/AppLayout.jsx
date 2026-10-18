@@ -25,7 +25,7 @@ import {
 
 import woldiaLogo from "../../assets/woldia-university-logo.png";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://woldia-internship-system.onrender.com/api";
 
 /* =========================================================
    ROLE CONFIGURATION

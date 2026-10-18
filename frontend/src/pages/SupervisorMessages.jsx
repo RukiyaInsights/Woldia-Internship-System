@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import AppLayout from "../components/layout/AppLayout";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://woldia-internship-system.onrender.com";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
 

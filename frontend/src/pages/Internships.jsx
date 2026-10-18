@@ -28,7 +28,7 @@ function Internships() {
         const fetchInternships = async () => {
             try {
                 const response = await fetch(
-                    "http://localhost:5000/api/students/internships",
+                    "https://woldia-internship-system.onrender.com/api/students/internships",
                     {
                         headers: {
                             Authorization:
@@ -65,7 +65,7 @@ function Internships() {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/students/internships/apply",
+                "https://woldia-internship-system.onrender.com/api/students/internships/apply",
                 {
                     method: "POST",
                     headers: {

@@ -16,7 +16,7 @@ import {
 
 import AppLayout from "../components/layout/AppLayout";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://woldia-internship-system.onrender.com/api";
 
 function AdminAssignments() {
     const [assignments, setAssignments] = useState([]);

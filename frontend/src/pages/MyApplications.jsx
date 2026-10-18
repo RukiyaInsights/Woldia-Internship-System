@@ -35,7 +35,7 @@ function MyApplications() {
             }
 
             const response = await fetch(
-                "http://localhost:5000/api/students/applications",
+                "https://woldia-internship-system.onrender.com/api/students/applications",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,

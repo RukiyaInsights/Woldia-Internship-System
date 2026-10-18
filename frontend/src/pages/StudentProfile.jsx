@@ -17,7 +17,7 @@ import {
 
 import AppLayout from "../components/layout/AppLayout";
 
-const API_URL = "http://localhost:5000/api/students/profile";
+const API_URL = "https://woldia-internship-system.onrender.com/api/students/profile";
 
 const departments = [
   "Computer Science",

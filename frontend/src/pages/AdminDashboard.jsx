@@ -39,7 +39,7 @@ function AdminDashboard() {
             setError("");
 
             const response = await fetch(
-                "http://localhost:5000/api/admin/stats",
+                "https://woldia-internship-system.onrender.com/api/admin/stats",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

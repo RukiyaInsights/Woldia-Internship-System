@@ -15,7 +15,7 @@ import {
     X,
 } from "lucide-react";
 
-const API_URL = "http://localhost:5000/api/students";
+const API_URL = "https://woldia-internship-system.onrender.com/api/students";
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
 
 const ALLOWED_EXTENSIONS = [
